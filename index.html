@@ -15,6 +15,39 @@
         </ul>
     </nav>
     <main>
+
+      <p>Form</p>
+      <form>
+        <!--This is a comment in HTML. It lets you write text that
+        won't be rendered in the webpage.-->
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name" required />
+        <br><br>
+        <!--The "for" attribute references the "name" attribute in <input>.
+        The "name" attribute is necessary once we start tying in JavaScript-->
+        <checkbox for="email">Email</checkbox>
+        <input type="email" id="email" name="email" placeholder="Email" />
+        <br><br>
+        <radio for="password">Password</radio>
+        <input type="password" id="pass" name="pass" placeholder="Password" />
+        <br><br>
+        <label for="select">Position</label>
+        <select id="select" name="select">
+          <option value="software">Software Developer</option>
+          <option value="product">Product Manager</option>
+          <option value="design">Designer</option>
+        </select>
+        <br><br>
+        <label for="comments">Comments</label>
+        <textarea
+          id="comments"
+          name="comments"
+          placeholder="Comments"
+          required
+        ></textarea>
+        <br><br>
+        <input type="submit" value="Submit" />
+
       <h1>Hello World! This is my website.</h1>
       <div class="about">
         <div class="about-image">
