@@ -133,7 +133,7 @@ input[type="submit"]:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .blog, .portfolio, .resume, .contact {
