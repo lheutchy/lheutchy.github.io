@@ -1,6 +1,6 @@
-:root {
+/*:root {
   /* variables */
-  --cg-black: rgb(30, 32, 32);
+  /*--cg-black: rgb(30, 32, 32);
   --cg-blue: rgb(36, 94, 255);
   --cg-grey: rgb(243, 243, 243);
   --cg-white: rgb(255, 255, 255);
@@ -21,7 +21,7 @@ body {
 
 /* CSS for navigation */
 
-.navbar {
+/*.navbar {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -40,9 +40,9 @@ body {
 
   /* Debug border */
   /* border: solid red; */
-}
+/*}
 
-.nav-list {
+/*.nav-list {
   display: flex;
   flex-direction: row;
   position: relative;
@@ -51,7 +51,7 @@ body {
 
   /* Debug border */
   /* border: solid blue; */
-}
+/*}
 
 .navbar a {
   color: var(--cg-white);
@@ -97,7 +97,7 @@ main {
 
 /* CSS for portfolio grid */
 
-.project {
+/*.project {
   display: flex;
   flex-direction: row;
   max-width: 100%;
@@ -105,14 +105,14 @@ main {
 
   /* Debug border */
   /* border: 2px solid blue; */
-}
+/*}
 
 .item-link {
   width: 70%;
 
   /* Debug border */
   /* border: 2px solid red; */
-}
+/*}
 
 .project-image {
   object-fit: cover;
@@ -123,7 +123,7 @@ main {
 
   /* Debug border */
   /* border: 2px solid black; */
-}
+/*}
 
 .project-details {
   display: flex;
@@ -142,7 +142,7 @@ main {
 
   /* Debug border */
   /* border: 2px solid green; */
-}
+/*}
 
 .project-details a {
   color: var(--cg-black);
@@ -167,7 +167,7 @@ main {
 
 /* CSS for home page */
 
-.about {
+/*.about {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -176,13 +176,13 @@ main {
   border: 1px solid #ccc;
   border-radius: 5px;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-}
+/*}
 
 .about-image img {
   max-width: 300px;
   border-radius: 3px;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
-}
+/*}
 
 .about-text {
   flex: 1;
@@ -201,7 +201,7 @@ main {
 
 /* CSS for resume page */
 
-.button {
+/*.button {
   background-color: var(--cg-black);
   border: none;
   color: var(--cg-white);
@@ -224,7 +224,7 @@ main {
 
 /* CSS for contact form */
 
-label {
+/*label {
   display: block;
   margin-bottom: 8px;
   font-family: Georgia;
@@ -244,14 +244,14 @@ textarea {
 }
 
 /* Add some spacing to the form */
-form {
+/*form {
   width: 500px;
   margin: 0 auto;
 }
 
 /* CSS for footer */
 
-.footer {
+/*.footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -261,4 +261,214 @@ form {
   bottom: 0;
   width: 100%;
   height: 2.5rem;
+}*/
+
+
+/* ===== Base Theme Colors ===== */
+:root {
+  --bg-color: #0b0c10;
+  --navy: #0d1b2a;
+  --grey: #c5c6c7;
+  --white: #ffffff;
+  --teal: #00b3b3;
+  --accent-dark: #1f2833;
+}
+
+/* ===== Global Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--grey);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--navy);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--accent-dark);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--grey);
+  font-weight: 500;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: var(--teal);
+  border-bottom: 1px solid var(--teal);
+}
+
+/* ===== Main Content ===== */
+main {
+  flex: 1;
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+h1, h2, h3 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--grey);
+  margin-bottom: 1rem;
+}
+
+/* ===== Forms ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--accent-dark);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #1a1a1a;
+  color: var(--white);
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  outline: 1px solid var(--teal);
+}
+
+input[type="submit"] {
+  background-color: var(--teal);
+  color: var(--white);
+  border: none;
+  padding: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #009999;
+}
+
+/* ===== Sections ===== */
+.about, .blog, .portfolio, .resume, .contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-text, .portfolio-text, .resume-text, .contact-text, .blog-text {
+  flex: 1 1 400px;
+  background: var(--accent-dark);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.about-image, .portfolio-image, .blog-image, .resume-image, .contact-image {
+  flex: 1 1 300px;
+  background: #1a1a1a;
+  border-radius: 10px;
+  height: 250px;
+}
+
+/* ===== Project Cards ===== */
+.projects {
+  background: var(--accent-dark);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 2rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.projects:hover {
+  background: #141e30;
+  transform: translateY(-5px);
+}
+
+.projects img {
+  max-width: 200px;
+  border-radius: 10px;
+  filter: grayscale(60%);
+  transition: filter 0.3s ease;
+}
+
+.projects img:hover {
+  filter: grayscale(0%);
+}
+
+.project-details a {
+  color: var(--teal);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-details a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid var(--accent-dark);
+  background-color: var(--navy);
+  color: var(--grey);
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  main {
+    margin: 2rem 1rem;
+  }
 }
