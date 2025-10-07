@@ -106,13 +106,21 @@ input[type="submit"]:hover {
   color: var(--white);
 }
 
-.index-section { 
+.about {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  margin: 2rem auto; text-align: left;
+}
+
+.about img {
+  width: 540px;
+  height: 360px;
+  border-radius: 6px;
+}
+
+.about-text {
+  max-width: 400px;
 }
 
 .footer {
