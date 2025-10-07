@@ -136,7 +136,7 @@ input[type="submit"]:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .blog, .portfolio, .resume, .contact {
