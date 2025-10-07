@@ -14,6 +14,7 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 h1, h2, h3 {
@@ -154,12 +155,8 @@ input[type="submit"]:hover {
   border-top: 1px solid var(--teal);
 }
 
-html, body {
+html {
   height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
 }
 
 main {
