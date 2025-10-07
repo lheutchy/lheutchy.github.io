@@ -14,6 +14,29 @@ body {
   padding: 0;
 }
 
+h1, h2, h3 {
+  color: var(--white);
+  margin: 0;
+}
+
+p {
+  color: var(--grey);
+  margin: 0.5rem 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey);
+}
+
+a:hover {
+  color: var(--teal);
+}
+
+main {
+  padding: 2rem;
+}
+
 .navbar {
   background-color: var(--dark-navy);
   color: var(--white);
@@ -22,13 +45,12 @@ body {
 }
 
 .logo a {
-  color: var(--white);
-  text-decoration: none;
   font-weight: bold;
+  color: var(--white);
 }
 
 .nav-list {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -38,31 +60,10 @@ body {
   margin-right: 20px;
 }
 
-.nav-list a {
-  color: var(--grey);
-  text-decoration: none;
-}
-
-.nav-list a:hover {
-  color: var(--teal);
-}
-
-main {
-  padding: 2rem;
-}
-
-h1, h2, h3 {
-  color: var(--white);
-}
-
-p {
-  color: var(--grey);
-}
-
 form {
   border: 1px solid var(--grey);
-  padding: 1rem;
   background-color: var(--dark-navy);
+  padding: 1rem;
 }
 
 label {
@@ -75,9 +76,9 @@ input, textarea {
   width: 100%;
   padding: 0.5rem;
   margin-top: 0.3rem;
+  border: 1px solid var(--grey);
   background-color: var(--black);
   color: var(--white);
-  border: 1px solid var(--grey);
 }
 
 input:focus, textarea:focus {
@@ -98,17 +99,15 @@ input[type="submit"]:hover {
   background-color: #009999;
 }
 
-.about, .blog, .portfolio, .resume, .contact {
-  border: 1px solid var(--grey);
-  padding: 1rem;
-  margin-top: 2rem;
-  background-color: var(--dark-navy);
-  color: var(--white);
+.index-section h1 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .about {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
 }
@@ -121,6 +120,17 @@ input[type="submit"]:hover {
 
 .about-text {
   max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog, .portfolio, .resume, .contact {
+  border: 1px solid var(--grey);
+  background-color: var(--dark-navy);
+  padding: 1rem;
+  margin-top: 2rem;
+  color: var(--white);
 }
 
 .footer {
@@ -129,4 +139,20 @@ input[type="submit"]:hover {
   text-align: center;
   padding: 1rem;
   border-top: 1px solid var(--teal);
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img {
+    width: 90%;
+    height: auto;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
 }
