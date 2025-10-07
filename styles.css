@@ -106,6 +106,15 @@ input[type="submit"]:hover {
   color: var(--white);
 }
 
+.index-section { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem auto; text-align: left;
+}
+
 .footer {
   background-color: var(--dark-navy);
   color: var(--grey);
